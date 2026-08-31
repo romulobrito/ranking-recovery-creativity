@@ -47,3 +47,13 @@ Chance baselines (R=2500):
 - Shipped `results/` are enough to verify the paper tables.
 - Re-running LLM judges from raw GVALD parquet dumps requires `LLM-as-judge-data-geval/` (not included in this minimal package).
 - Re-running some baseline scripts may require intermediate `*_detalhado.json` folders that are also omitted from this minimal package.
+
+## Ranking text export
+
+Flat exports of the submissions used for ranking (story text + extracted ideas + likes):
+
+- `data/ranking_texts_extracted_ideas.json`
+- `data/ranking_texts_extracted_ideas.csv`
+
+Primary ranking input column: `extracted_idea_250`. Reference ordering column: `likes` (within each `prompt_url`).
+
