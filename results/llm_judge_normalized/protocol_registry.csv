@@ -1,0 +1,6 @@
+protocol_id,role,n_judges,judge_models
+tournament_description,primary,6,anthropic-claude-3-haiku|deepseek-deepseek-v3.1-terminus|google-gemini-3.1-pro-preview|openai-gpt-oss-120b|qwen-qwen-2.5-7b-instruct|x-ai-grok-4.3
+with_anchor_no_desc,ablation,3,anthropic-claude-3.7-sonnet|deepseek-deepseek-v3.1-terminus|x-ai-grok-4.1-fast
+with_anchor_with_desc,ablation,2,anthropic-claude-3.7-sonnet|deepseek-deepseek-v3.1-terminus
+no_anchor_no_desc,ablation,4,deepseek-deepseek-v3.1-terminus|openai-gpt-oss-120b|qwen-qwen-2.5-7b-instruct|x-ai-grok-4.1-fast
+no_anchor_with_desc,ablation,4,deepseek-deepseek-v3.1-terminus|openai-gpt-oss-120b|qwen-qwen-2.5-7b-instruct|x-ai-grok-4.1-fast

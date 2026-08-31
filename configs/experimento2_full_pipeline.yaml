@@ -1,0 +1,8 @@
+h2_batch:
+  config: configs/h2_batch_paper_models.yaml
+
+h2_random_baseline:
+  config: configs/h2_random_baseline_2500.yaml
+
+prompt_tables:
+  config: configs/prompt_tables_experimento2.yaml

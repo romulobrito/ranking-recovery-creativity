@@ -1,0 +1,15 @@
+{
+  "protocol_id": "tournament_description",
+  "judge_model": "openai-gpt-oss-120b",
+  "score_column": "creativity_score_mean",
+  "source_parquet": "/home/romulo/Documentos/MAI-DAI-USP/embedding_models_eval/LLM-as-judge-data-geval/com descricao do torneio-20260710T124651Z-2-001/com descricao do torneio/com descricao/scores/openai-gpt-oss-120b_20260627_071323_aggregated.parquet",
+  "n_rows": 354,
+  "n_prompts": 20,
+  "n_winners": 20,
+  "n_null_rank_pred": 0,
+  "has_creativity_score_mean": true,
+  "has_creativity_score": true,
+  "n_runs_unique": [
+    3
+  ]
+}

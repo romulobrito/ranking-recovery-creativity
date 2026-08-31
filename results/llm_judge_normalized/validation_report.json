@@ -1,0 +1,115 @@
+{
+  "ok": true,
+  "checks": [
+    {
+      "name": "manifest_protocols",
+      "ok": true,
+      "detail": "found=['no_anchor_no_desc', 'no_anchor_with_desc', 'tournament_description', 'with_anchor_no_desc', 'with_anchor_with_desc'] expected=['no_anchor_no_desc', 'no_anchor_with_desc', 'tournament_description', 'with_anchor_no_desc', 'with_anchor_with_desc']"
+    },
+    {
+      "name": "reference_prompt_count",
+      "ok": true,
+      "detail": "n=20"
+    },
+    {
+      "name": "partition::no_anchor_no_desc::deepseek-deepseek-v3.1-terminus",
+      "ok": true,
+      "detail": "n_prompts=20 n_winners=20 n_extracted=20 prompt_match=True"
+    },
+    {
+      "name": "partition::no_anchor_no_desc::openai-gpt-oss-120b",
+      "ok": true,
+      "detail": "n_prompts=20 n_winners=20 n_extracted=20 prompt_match=True"
+    },
+    {
+      "name": "partition::no_anchor_no_desc::qwen-qwen-2.5-7b-instruct",
+      "ok": true,
+      "detail": "n_prompts=20 n_winners=20 n_extracted=20 prompt_match=True"
+    },
+    {
+      "name": "partition::no_anchor_no_desc::x-ai-grok-4.1-fast",
+      "ok": true,
+      "detail": "n_prompts=20 n_winners=20 n_extracted=20 prompt_match=True"
+    },
+    {
+      "name": "partition::no_anchor_with_desc::deepseek-deepseek-v3.1-terminus",
+      "ok": true,
+      "detail": "n_prompts=20 n_winners=20 n_extracted=20 prompt_match=True"
+    },
+    {
+      "name": "partition::no_anchor_with_desc::openai-gpt-oss-120b",
+      "ok": true,
+      "detail": "n_prompts=20 n_winners=20 n_extracted=20 prompt_match=True"
+    },
+    {
+      "name": "partition::no_anchor_with_desc::qwen-qwen-2.5-7b-instruct",
+      "ok": true,
+      "detail": "n_prompts=20 n_winners=20 n_extracted=20 prompt_match=True"
+    },
+    {
+      "name": "partition::no_anchor_with_desc::x-ai-grok-4.1-fast",
+      "ok": true,
+      "detail": "n_prompts=20 n_winners=20 n_extracted=20 prompt_match=True"
+    },
+    {
+      "name": "partition::tournament_description::anthropic-claude-3-haiku",
+      "ok": true,
+      "detail": "n_prompts=20 n_winners=20 n_extracted=20 prompt_match=True"
+    },
+    {
+      "name": "partition::tournament_description::deepseek-deepseek-v3.1-terminus",
+      "ok": true,
+      "detail": "n_prompts=20 n_winners=20 n_extracted=20 prompt_match=True"
+    },
+    {
+      "name": "partition::tournament_description::google-gemini-3.1-pro-preview",
+      "ok": true,
+      "detail": "n_prompts=20 n_winners=20 n_extracted=20 prompt_match=True"
+    },
+    {
+      "name": "partition::tournament_description::openai-gpt-oss-120b",
+      "ok": true,
+      "detail": "n_prompts=20 n_winners=20 n_extracted=20 prompt_match=True"
+    },
+    {
+      "name": "partition::tournament_description::qwen-qwen-2.5-7b-instruct",
+      "ok": true,
+      "detail": "n_prompts=20 n_winners=20 n_extracted=20 prompt_match=True"
+    },
+    {
+      "name": "partition::tournament_description::x-ai-grok-4.3",
+      "ok": true,
+      "detail": "n_prompts=20 n_winners=20 n_extracted=20 prompt_match=True"
+    },
+    {
+      "name": "partition::with_anchor_no_desc::anthropic-claude-3.7-sonnet",
+      "ok": true,
+      "detail": "n_prompts=20 n_winners=20 n_extracted=20 prompt_match=True"
+    },
+    {
+      "name": "partition::with_anchor_no_desc::deepseek-deepseek-v3.1-terminus",
+      "ok": true,
+      "detail": "n_prompts=20 n_winners=20 n_extracted=20 prompt_match=True"
+    },
+    {
+      "name": "partition::with_anchor_no_desc::x-ai-grok-4.1-fast",
+      "ok": true,
+      "detail": "n_prompts=20 n_winners=20 n_extracted=20 prompt_match=True"
+    },
+    {
+      "name": "partition::with_anchor_with_desc::anthropic-claude-3.7-sonnet",
+      "ok": true,
+      "detail": "n_prompts=20 n_winners=20 n_extracted=20 prompt_match=True"
+    },
+    {
+      "name": "partition::with_anchor_with_desc::deepseek-deepseek-v3.1-terminus",
+      "ok": true,
+      "detail": "n_prompts=20 n_winners=20 n_extracted=20 prompt_match=True"
+    },
+    {
+      "name": "latex_ready_n3_above_p95_consistency",
+      "ok": true,
+      "detail": "ok"
+    }
+  ]
+}

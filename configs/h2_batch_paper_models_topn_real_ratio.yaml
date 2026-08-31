@@ -1,0 +1,74 @@
+dataset:
+  input_json: saida_final.json
+  output_root: results/experimento2_h2_topn_real_ratio
+
+protocol:
+  k_values: [1, 2, 3, 4, 5, 6, 7]
+  exclude_winner: true
+  metric_mode: topn_real_ratio
+  clip_0_1: true
+  required_models:
+    - all-mpnet-base-v2
+    - text-embedding-3-large
+    - all-MiniLM-L12-v2
+    - all-MiniLM-L6-v2
+    - text-embedding-3-small
+    - multi-qa-MiniLM-L6-cos-v1
+    - paraphrase-MiniLM-L12-v2
+    - paraphrase-multilingual-MiniLM
+    - gemini-embedding
+    - qwen3-embedding-8b
+
+models:
+  - name: all-mpnet-base-v2
+    config: configs/h2_eval_minilm.yaml
+    model_override: sentence-transformers/all-mpnet-base-v2
+    output_subdir: all-mpnet-base-v2
+
+  - name: text-embedding-3-large
+    config: configs/h2_eval_openai_large.yaml
+    output_subdir: text-embedding-3-large
+
+  - name: all-MiniLM-L12-v2
+    config: configs/h2_eval_minilm.yaml
+    model_override: sentence-transformers/all-MiniLM-L12-v2
+    output_subdir: all-MiniLM-L12-v2
+
+  - name: all-MiniLM-L6-v2
+    config: configs/h2_eval_minilm.yaml
+    model_override: sentence-transformers/all-MiniLM-L6-v2
+    output_subdir: all-MiniLM-L6-v2
+
+  - name: text-embedding-3-small
+    config: configs/h2_eval_openai_small.yaml
+    output_subdir: text-embedding-3-small
+
+  - name: multi-qa-MiniLM-L6-cos-v1
+    config: configs/h2_eval_minilm.yaml
+    model_override: sentence-transformers/multi-qa-MiniLM-L6-cos-v1
+    output_subdir: multi-qa-MiniLM-L6-cos-v1
+
+  - name: paraphrase-MiniLM-L12-v2
+    config: configs/h2_eval_minilm.yaml
+    model_override: sentence-transformers/paraphrase-MiniLM-L12-v2
+    output_subdir: paraphrase-MiniLM-L12-v2
+
+  - name: paraphrase-multilingual-MiniLM
+    config: configs/h2_eval_minilm.yaml
+    model_override: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+    output_subdir: paraphrase-multilingual-MiniLM
+
+  - name: gemini-embedding
+    config: configs/h2_eval_embeddinggemma.yaml
+    output_subdir: gemini-embedding
+
+  - name: qwen3-embedding-8b
+    config: configs/h2_eval_qwen3_openrouter.yaml
+    output_subdir: qwen3-embedding-8b
+
+comparison:
+  enabled: true
+  h1_path: results/experimento2_h1_topn_real_ratio
+  h2_path: results/experimento2_h2_topn_real_ratio
+  out_dir: results/experimento2_h1_h2_topn_real_ratio
+

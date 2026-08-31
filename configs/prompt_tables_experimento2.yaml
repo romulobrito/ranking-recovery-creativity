@@ -1,0 +1,57 @@
+protocol:
+  k_values: [1, 2, 3, 4, 5, 6, 7]
+  exclude_winner: true
+
+output:
+  out_dir: results/experimento2_prompt_tables
+
+inputs:
+  - hypothesis: H1
+    model: all-mpnet-base-v2
+    detailed_json: results/full_run_with_extras/mpnet_base_detalhado.json
+  - hypothesis: H1
+    model: text-embedding-3-large
+    detailed_json: results/full_run_with_extras/openai_large_detalhado.json
+  - hypothesis: H1
+    model: all-MiniLM-L12-v2
+    detailed_json: results/full_run_with_extras/minilm_l12_detalhado.json
+  - hypothesis: H1
+    model: all-MiniLM-L6-v2
+    detailed_json: results/full_run_with_extras/minilm_detalhado.json
+  - hypothesis: H1
+    model: text-embedding-3-small
+    detailed_json: results/full_run_with_extras/openai_small_detalhado.json
+  - hypothesis: H1
+    model: multi-qa-MiniLM-L6-cos-v1
+    detailed_json: results/full_run_with_extras/multi_qa_minilm_detalhado.json
+  - hypothesis: H1
+    model: paraphrase-MiniLM-L12-v2
+    detailed_json: results/full_run_with_extras/paraphrase_minilm_detalhado.json
+  - hypothesis: H1
+    model: paraphrase-multilingual-MiniLM
+    detailed_json: results/full_run_with_extras/multilingual_detalhado.json
+
+  - hypothesis: H2
+    model: all-mpnet-base-v2
+    detailed_json: results/experimento2_h2/all-mpnet-base-v2/resultados_h2_detalhado.json
+  - hypothesis: H2
+    model: text-embedding-3-large
+    detailed_json: results/experimento2_h2/text-embedding-3-large/resultados_h2_detalhado.json
+  - hypothesis: H2
+    model: all-MiniLM-L12-v2
+    detailed_json: results/experimento2_h2/all-MiniLM-L12-v2/resultados_h2_detalhado.json
+  - hypothesis: H2
+    model: all-MiniLM-L6-v2
+    detailed_json: results/experimento2_h2/all-MiniLM-L6-v2/resultados_h2_detalhado.json
+  - hypothesis: H2
+    model: text-embedding-3-small
+    detailed_json: results/experimento2_h2/text-embedding-3-small/resultados_h2_detalhado.json
+  - hypothesis: H2
+    model: multi-qa-MiniLM-L6-cos-v1
+    detailed_json: results/experimento2_h2/multi-qa-MiniLM-L6-cos-v1/resultados_h2_detalhado.json
+  - hypothesis: H2
+    model: paraphrase-MiniLM-L12-v2
+    detailed_json: results/experimento2_h2/paraphrase-MiniLM-L12-v2/resultados_h2_detalhado.json
+  - hypothesis: H2
+    model: paraphrase-multilingual-MiniLM
+    detailed_json: results/experimento2_h2/paraphrase-multilingual-MiniLM/resultados_h2_detalhado.json

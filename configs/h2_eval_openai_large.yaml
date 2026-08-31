@@ -1,0 +1,6 @@
+embedding:
+  backend: openai
+  model: text-embedding-3-large
+  api_key_env: OPENAI_API_KEY
+  batch_size: 100
+  normalize: true

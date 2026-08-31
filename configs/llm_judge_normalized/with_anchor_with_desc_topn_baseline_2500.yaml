@@ -1,0 +1,23 @@
+protocol:
+  k_values:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  num_permutations: 2500
+  percentiles:
+  - 95
+  seed: 42
+  protocol_id: with_anchor_with_desc
+  metric_family: topn
+dataset:
+  output_csv: /home/romulo/Documentos/MAI-DAI-USP/embedding_models_eval/results/llm_judge_normalized/by_protocol/with_anchor_with_desc/random_baseline_topn_2500/summary.csv
+  output_json: /home/romulo/Documentos/MAI-DAI-USP/embedding_models_eval/results/llm_judge_normalized/by_protocol/with_anchor_with_desc/random_baseline_topn_2500/summary.json
+models:
+- name: anthropic-claude-3.7-sonnet
+  detailed_json: /home/romulo/Documentos/MAI-DAI-USP/embedding_models_eval/results/llm_judge_normalized/by_protocol/with_anchor_with_desc/judges/anthropic-claude-3.7-sonnet/detalhado.json
+- name: deepseek-deepseek-v3.1-terminus
+  detailed_json: /home/romulo/Documentos/MAI-DAI-USP/embedding_models_eval/results/llm_judge_normalized/by_protocol/with_anchor_with_desc/judges/deepseek-deepseek-v3.1-terminus/detalhado.json

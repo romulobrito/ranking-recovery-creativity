@@ -1,0 +1,37 @@
+protocol:
+  k_values: [1, 2, 3, 4, 5, 6, 7]
+  num_permutations: 2500
+  percentiles: [95]
+  seed: 42
+
+dataset:
+  output_csv: results/experimento2_h1_topn_real_ratio_random_baseline_2500/summary.csv
+  output_json: results/experimento2_h1_topn_real_ratio_random_baseline_2500/summary.json
+
+models:
+  - name: all-mpnet-base-v2
+    detailed_json: results/experimento2_h1_topn_real_ratio/all-mpnet-base-v2_detalhado.json
+
+  - name: text-embedding-3-large
+    detailed_json: results/experimento2_h1_topn_real_ratio/text-embedding-3-large_detalhado.json
+
+  - name: all-MiniLM-L12-v2
+    detailed_json: results/experimento2_h1_topn_real_ratio/all-MiniLM-L12-v2_detalhado.json
+
+  - name: all-MiniLM-L6-v2
+    detailed_json: results/experimento2_h1_topn_real_ratio/all-MiniLM-L6-v2_detalhado.json
+
+  - name: text-embedding-3-small
+    detailed_json: results/experimento2_h1_topn_real_ratio/text-embedding-3-small_detalhado.json
+
+  - name: multi-qa-MiniLM-L6-cos-v1
+    detailed_json: results/experimento2_h1_topn_real_ratio/multi-qa-MiniLM-L6-cos-v1_detalhado.json
+
+  - name: paraphrase-MiniLM-L12-v2
+    detailed_json: results/experimento2_h1_topn_real_ratio/paraphrase-MiniLM-L12-v2_detalhado.json
+
+  - name: paraphrase-multilingual-MiniLM
+    detailed_json: results/experimento2_h1_topn_real_ratio/paraphrase-multilingual-MiniLM_detalhado.json
+
+  - name: qwen3-embedding-8b
+    detailed_json: results/experimento2_h1_selected/qwen3-embedding-8b/qwen3-embedding-8b_detalhado.json

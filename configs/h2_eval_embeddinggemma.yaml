@@ -1,0 +1,12 @@
+# H2: Gemini Embedding via OpenRouter (API compativel OpenAI).
+# Chave: OPENROUTER_API_KEY em experimento_convergencia_visualizacao_metricas/.env
+# batch_size reduzido: gemini-embedding-001 context = 2048 tokens;
+# textos longos em batch grande podem causar resposta vazia.
+
+embedding:
+  backend: openai
+  model: google/gemini-embedding-001
+  api_key_env: OPENROUTER_API_KEY
+  base_url: https://openrouter.ai/api/v1
+  batch_size: 10
+  normalize: true

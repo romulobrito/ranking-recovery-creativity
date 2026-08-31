@@ -1,0 +1,15 @@
+{
+  "protocol_id": "with_anchor_no_desc",
+  "judge_model": "deepseek-deepseek-v3.1-terminus",
+  "score_column": "creativity_score_mean",
+  "source_parquet": "/home/romulo/Documentos/MAI-DAI-USP/embedding_models_eval/LLM-as-judge-data-geval/com ancora-20260710T124421Z-2-001/com ancora/sem descricao/scores/deepseek-deepseek-v3.1-terminus_20260323_110237_aggregated.parquet",
+  "n_rows": 354,
+  "n_prompts": 20,
+  "n_winners": 20,
+  "n_null_rank_pred": 20,
+  "has_creativity_score_mean": true,
+  "has_creativity_score": true,
+  "n_runs_unique": [
+    3
+  ]
+}

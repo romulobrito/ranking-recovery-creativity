@@ -1,0 +1,6 @@
+embedding:
+  backend: sentence_transformers
+  model: sentence-transformers/all-MiniLM-L6-v2
+  batch_size: 32
+  device: cpu
+  normalize: true

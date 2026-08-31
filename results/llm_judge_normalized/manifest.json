@@ -1,0 +1,187 @@
+{
+  "geval_root": "/home/romulo/Documentos/MAI-DAI-USP/embedding_models_eval/LLM-as-judge-data-geval",
+  "project_root": "/home/romulo/Documentos/MAI-DAI-USP/embedding_models_eval",
+  "k_values": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "num_permutations": 2500,
+  "seed": 42,
+  "score_rule": "creativity_score_mean if present else creativity_score",
+  "exclude_winner": true,
+  "protocols": [
+    {
+      "protocol_id": "tournament_description",
+      "role": "primary",
+      "n_judges": 6,
+      "judges": [
+        {
+          "judge_model": "anthropic-claude-3-haiku",
+          "source_parquet": "/home/romulo/Documentos/MAI-DAI-USP/embedding_models_eval/LLM-as-judge-data-geval/com descricao do torneio-20260710T124651Z-2-001/com descricao do torneio/com descricao/scores/anthropic-claude-3-haiku_20260627_080739_aggregated.parquet",
+          "score_column": "creativity_score_mean",
+          "n_prompts": 20,
+          "n_stories": 354
+        },
+        {
+          "judge_model": "deepseek-deepseek-v3.1-terminus",
+          "source_parquet": "/home/romulo/Documentos/MAI-DAI-USP/embedding_models_eval/LLM-as-judge-data-geval/com descricao do torneio-20260710T124651Z-2-001/com descricao do torneio/com descricao/scores/deepseek-deepseek-v3.1-terminus_20260627_073424_aggregated.parquet",
+          "score_column": "creativity_score_mean",
+          "n_prompts": 20,
+          "n_stories": 354
+        },
+        {
+          "judge_model": "google-gemini-3.1-pro-preview",
+          "source_parquet": "/home/romulo/Documentos/MAI-DAI-USP/embedding_models_eval/LLM-as-judge-data-geval/com descricao do torneio-20260710T124651Z-2-001/com descricao do torneio/com descricao/scores/google-gemini-3.1-pro-preview_20260627_081405_aggregated.parquet",
+          "score_column": "creativity_score_mean",
+          "n_prompts": 20,
+          "n_stories": 354
+        },
+        {
+          "judge_model": "openai-gpt-oss-120b",
+          "source_parquet": "/home/romulo/Documentos/MAI-DAI-USP/embedding_models_eval/LLM-as-judge-data-geval/com descricao do torneio-20260710T124651Z-2-001/com descricao do torneio/com descricao/scores/openai-gpt-oss-120b_20260627_071323_aggregated.parquet",
+          "score_column": "creativity_score_mean",
+          "n_prompts": 20,
+          "n_stories": 354
+        },
+        {
+          "judge_model": "qwen-qwen-2.5-7b-instruct",
+          "source_parquet": "/home/romulo/Documentos/MAI-DAI-USP/embedding_models_eval/LLM-as-judge-data-geval/com descricao do torneio-20260710T124651Z-2-001/com descricao do torneio/com descricao/scores/qwen-qwen-2.5-7b-instruct_20260627_070829_aggregated.parquet",
+          "score_column": "creativity_score_mean",
+          "n_prompts": 20,
+          "n_stories": 354
+        },
+        {
+          "judge_model": "x-ai-grok-4.3",
+          "source_parquet": "/home/romulo/Documentos/MAI-DAI-USP/embedding_models_eval/LLM-as-judge-data-geval/com descricao do torneio-20260710T124651Z-2-001/com descricao do torneio/com descricao/scores/x-ai-grok-4.3_20260627_074741_aggregated.parquet",
+          "score_column": "creativity_score_mean",
+          "n_prompts": 20,
+          "n_stories": 354
+        }
+      ]
+    },
+    {
+      "protocol_id": "with_anchor_no_desc",
+      "role": "ablation",
+      "n_judges": 3,
+      "judges": [
+        {
+          "judge_model": "anthropic-claude-3.7-sonnet",
+          "source_parquet": "/home/romulo/Documentos/MAI-DAI-USP/embedding_models_eval/LLM-as-judge-data-geval/com ancora-20260710T124421Z-2-001/com ancora/sem descricao/scores/anthropic-claude-3.7-sonnet_20260323_211626_aggregated.parquet",
+          "score_column": "creativity_score",
+          "n_prompts": 20,
+          "n_stories": 354
+        },
+        {
+          "judge_model": "deepseek-deepseek-v3.1-terminus",
+          "source_parquet": "/home/romulo/Documentos/MAI-DAI-USP/embedding_models_eval/LLM-as-judge-data-geval/com ancora-20260710T124421Z-2-001/com ancora/sem descricao/scores/deepseek-deepseek-v3.1-terminus_20260323_110237_aggregated.parquet",
+          "score_column": "creativity_score_mean",
+          "n_prompts": 20,
+          "n_stories": 354
+        },
+        {
+          "judge_model": "x-ai-grok-4.1-fast",
+          "source_parquet": "/home/romulo/Documentos/MAI-DAI-USP/embedding_models_eval/LLM-as-judge-data-geval/com ancora-20260710T124421Z-2-001/com ancora/sem descricao/scores/x-ai-grok-4.1-fast_20260323_164921_aggregated.parquet",
+          "score_column": "creativity_score_mean",
+          "n_prompts": 20,
+          "n_stories": 354
+        }
+      ]
+    },
+    {
+      "protocol_id": "with_anchor_with_desc",
+      "role": "ablation",
+      "n_judges": 2,
+      "judges": [
+        {
+          "judge_model": "anthropic-claude-3.7-sonnet",
+          "source_parquet": "/home/romulo/Documentos/MAI-DAI-USP/embedding_models_eval/LLM-as-judge-data-geval/com ancora-20260710T124421Z-2-001/com ancora/com descricao/scores/anthropic-claude-3.7-sonnet_20260213_160637_aggregated.parquet",
+          "score_column": "creativity_score_mean",
+          "n_prompts": 20,
+          "n_stories": 354
+        },
+        {
+          "judge_model": "deepseek-deepseek-v3.1-terminus",
+          "source_parquet": "/home/romulo/Documentos/MAI-DAI-USP/embedding_models_eval/LLM-as-judge-data-geval/com ancora-20260710T124421Z-2-001/com ancora/com descricao/scores/deepseek-deepseek-v3.1-terminus_20260305_174956_aggregated.parquet",
+          "score_column": "creativity_score_mean",
+          "n_prompts": 20,
+          "n_stories": 354
+        }
+      ]
+    },
+    {
+      "protocol_id": "no_anchor_no_desc",
+      "role": "ablation",
+      "n_judges": 4,
+      "judges": [
+        {
+          "judge_model": "deepseek-deepseek-v3.1-terminus",
+          "source_parquet": "/home/romulo/Documentos/MAI-DAI-USP/embedding_models_eval/LLM-as-judge-data-geval/sem ancora-20260710T124713Z-2-001/sem ancora/sem descricao/scores/deepseek-deepseek-v3.1-terminus_20260406_080002_aggregated.parquet",
+          "score_column": "creativity_score_mean",
+          "n_prompts": 20,
+          "n_stories": 354
+        },
+        {
+          "judge_model": "openai-gpt-oss-120b",
+          "source_parquet": "/home/romulo/Documentos/MAI-DAI-USP/embedding_models_eval/LLM-as-judge-data-geval/sem ancora-20260710T124713Z-2-001/sem ancora/sem descricao/scores/openai-gpt-oss-120b_20260406_065940_aggregated.parquet",
+          "score_column": "creativity_score_mean",
+          "n_prompts": 20,
+          "n_stories": 354
+        },
+        {
+          "judge_model": "qwen-qwen-2.5-7b-instruct",
+          "source_parquet": "/home/romulo/Documentos/MAI-DAI-USP/embedding_models_eval/LLM-as-judge-data-geval/sem ancora-20260710T124713Z-2-001/sem ancora/sem descricao/scores/qwen-qwen-2.5-7b-instruct_20260406_054946_aggregated.parquet",
+          "score_column": "creativity_score_mean",
+          "n_prompts": 20,
+          "n_stories": 354
+        },
+        {
+          "judge_model": "x-ai-grok-4.1-fast",
+          "source_parquet": "/home/romulo/Documentos/MAI-DAI-USP/embedding_models_eval/LLM-as-judge-data-geval/sem ancora-20260710T124713Z-2-001/sem ancora/sem descricao/scores/x-ai-grok-4.1-fast_20260406_081154_aggregated.parquet",
+          "score_column": "creativity_score_mean",
+          "n_prompts": 20,
+          "n_stories": 354
+        }
+      ]
+    },
+    {
+      "protocol_id": "no_anchor_with_desc",
+      "role": "ablation",
+      "n_judges": 4,
+      "judges": [
+        {
+          "judge_model": "deepseek-deepseek-v3.1-terminus",
+          "source_parquet": "/home/romulo/Documentos/MAI-DAI-USP/embedding_models_eval/LLM-as-judge-data-geval/sem ancora-20260710T124713Z-2-001/sem ancora/com descricao/scores/deepseek-deepseek-v3.1-terminus_20260406_042123_aggregated.parquet",
+          "score_column": "creativity_score_mean",
+          "n_prompts": 20,
+          "n_stories": 354
+        },
+        {
+          "judge_model": "openai-gpt-oss-120b",
+          "source_parquet": "/home/romulo/Documentos/MAI-DAI-USP/embedding_models_eval/LLM-as-judge-data-geval/sem ancora-20260710T124713Z-2-001/sem ancora/com descricao/scores/openai-gpt-oss-120b_20260406_023308_aggregated.parquet",
+          "score_column": "creativity_score_mean",
+          "n_prompts": 20,
+          "n_stories": 354
+        },
+        {
+          "judge_model": "qwen-qwen-2.5-7b-instruct",
+          "source_parquet": "/home/romulo/Documentos/MAI-DAI-USP/embedding_models_eval/LLM-as-judge-data-geval/sem ancora-20260710T124713Z-2-001/sem ancora/com descricao/scores/qwen-qwen-2.5-7b-instruct_20260406_020359_aggregated.parquet",
+          "score_column": "creativity_score_mean",
+          "n_prompts": 20,
+          "n_stories": 354
+        },
+        {
+          "judge_model": "x-ai-grok-4.1-fast",
+          "source_parquet": "/home/romulo/Documentos/MAI-DAI-USP/embedding_models_eval/LLM-as-judge-data-geval/sem ancora-20260710T124713Z-2-001/sem ancora/com descricao/scores/x-ai-grok-4.1-fast_20260406_044254_aggregated.parquet",
+          "score_column": "creativity_score_mean",
+          "n_prompts": 20,
+          "n_stories": 354
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+# Secrets
+.env
+.env.*
+*.pem
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Caches / local tooling
+.deepeval/
+.DS_Store
+
+# Large regenerable dumps (keep out unless explicitly added)
+LLM-as-judge-data-geval/
+results/_tmp_*/

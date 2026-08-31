@@ -1,0 +1,31 @@
+protocol:
+  k_values:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  num_permutations: 2500
+  percentiles:
+  - 95
+  seed: 42
+  protocol_id: tournament_description
+  metric_family: feasible
+dataset:
+  output_csv: /home/romulo/Documentos/MAI-DAI-USP/embedding_models_eval/results/llm_judge_normalized/by_protocol/tournament_description/random_baseline_feasible_2500/summary.csv
+  output_json: /home/romulo/Documentos/MAI-DAI-USP/embedding_models_eval/results/llm_judge_normalized/by_protocol/tournament_description/random_baseline_feasible_2500/summary.json
+models:
+- name: anthropic-claude-3-haiku
+  detailed_json: /home/romulo/Documentos/MAI-DAI-USP/embedding_models_eval/results/llm_judge_normalized/by_protocol/tournament_description/judges/anthropic-claude-3-haiku/detalhado.json
+- name: deepseek-deepseek-v3.1-terminus
+  detailed_json: /home/romulo/Documentos/MAI-DAI-USP/embedding_models_eval/results/llm_judge_normalized/by_protocol/tournament_description/judges/deepseek-deepseek-v3.1-terminus/detalhado.json
+- name: google-gemini-3.1-pro-preview
+  detailed_json: /home/romulo/Documentos/MAI-DAI-USP/embedding_models_eval/results/llm_judge_normalized/by_protocol/tournament_description/judges/google-gemini-3.1-pro-preview/detalhado.json
+- name: openai-gpt-oss-120b
+  detailed_json: /home/romulo/Documentos/MAI-DAI-USP/embedding_models_eval/results/llm_judge_normalized/by_protocol/tournament_description/judges/openai-gpt-oss-120b/detalhado.json
+- name: qwen-qwen-2.5-7b-instruct
+  detailed_json: /home/romulo/Documentos/MAI-DAI-USP/embedding_models_eval/results/llm_judge_normalized/by_protocol/tournament_description/judges/qwen-qwen-2.5-7b-instruct/detalhado.json
+- name: x-ai-grok-4.3
+  detailed_json: /home/romulo/Documentos/MAI-DAI-USP/embedding_models_eval/results/llm_judge_normalized/by_protocol/tournament_description/judges/x-ai-grok-4.3/detalhado.json

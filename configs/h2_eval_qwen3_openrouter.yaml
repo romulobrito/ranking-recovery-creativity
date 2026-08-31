@@ -1,0 +1,10 @@
+# H2: Qwen3 Embedding 8B via OpenRouter (API compativel OpenAI).
+# Chave: OPENROUTER_API_KEY em experimento_convergencia_visualizacao_metricas/.env
+
+embedding:
+  backend: openai
+  model: qwen/qwen3-embedding-8b
+  api_key_env: OPENROUTER_API_KEY
+  base_url: https://openrouter.ai/api/v1
+  batch_size: 100
+  normalize: true

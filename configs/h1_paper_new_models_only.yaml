@@ -1,0 +1,52 @@
+# H1 incremental: only EmbeddingGemma + Qwen3 (feasible_range_ratio).
+# Use --models embeddinggemma-300m qwen3-embedding-8b if running full h1_paper_feasible_range.yaml.
+
+dataset:
+  path: "saida_final.json"
+  text_col: "extracted_idea_250"
+  truncate_content: 0
+
+models:
+  - name: "gemini-embedding"
+    provider: "openai"
+    config:
+      model_name: "google/gemini-embedding-001"
+      api_key: "${OPENROUTER_API_KEY}"
+      base_url: "https://openrouter.ai/api/v1"
+      batch_size: 100
+      normalize: true
+      max_retries: 3
+
+  - name: "qwen3-embedding-8b"
+    provider: "openai"
+    config:
+      model_name: "qwen/qwen3-embedding-8b"
+      api_key: "${OPENROUTER_API_KEY}"
+      base_url: "https://openrouter.ai/api/v1"
+      batch_size: 100
+      normalize: true
+      max_retries: 3
+
+metrics:
+  k_values: [1, 2, 3, 4, 5, 6, 7]
+  metric_names:
+    - "feasible_range_ratio"
+
+ranking:
+  group_cols: ["contest_number", "context_prompt_url"]
+  rank_col: "rank_in_prompt"
+  anchor_rank: 1
+
+output:
+  results_dir: "results/experimento2_h1_new_models"
+  save_detailed: true
+  save_detailed_json: true
+  save_summary: true
+  save_summary_json: true
+  save_summary_excel: true
+  include_std_in_summary: true
+
+pipeline_extras:
+  save_per_prompt_metrics: false
+  run_tfidf_baseline: false
+  run_visualizations: false

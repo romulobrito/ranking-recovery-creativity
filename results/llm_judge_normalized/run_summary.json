@@ -1,0 +1,66 @@
+{
+  "protocols": {
+    "tournament_description": {
+      "n_judges": 6,
+      "judges": [
+        "anthropic-claude-3-haiku",
+        "deepseek-deepseek-v3.1-terminus",
+        "google-gemini-3.1-pro-preview",
+        "openai-gpt-oss-120b",
+        "qwen-qwen-2.5-7b-instruct",
+        "x-ai-grok-4.3"
+      ],
+      "skip_baseline": false
+    },
+    "with_anchor_no_desc": {
+      "n_judges": 3,
+      "judges": [
+        "anthropic-claude-3.7-sonnet",
+        "deepseek-deepseek-v3.1-terminus",
+        "x-ai-grok-4.1-fast"
+      ],
+      "skip_baseline": false
+    },
+    "with_anchor_with_desc": {
+      "n_judges": 2,
+      "judges": [
+        "anthropic-claude-3.7-sonnet",
+        "deepseek-deepseek-v3.1-terminus"
+      ],
+      "skip_baseline": false
+    },
+    "no_anchor_no_desc": {
+      "n_judges": 4,
+      "judges": [
+        "deepseek-deepseek-v3.1-terminus",
+        "openai-gpt-oss-120b",
+        "qwen-qwen-2.5-7b-instruct",
+        "x-ai-grok-4.1-fast"
+      ],
+      "skip_baseline": false
+    },
+    "no_anchor_with_desc": {
+      "n_judges": 4,
+      "judges": [
+        "deepseek-deepseek-v3.1-terminus",
+        "openai-gpt-oss-120b",
+        "qwen-qwen-2.5-7b-instruct",
+        "x-ai-grok-4.1-fast"
+      ],
+      "skip_baseline": false
+    }
+  },
+  "output_root": "/home/romulo/Documentos/MAI-DAI-USP/embedding_models_eval/results/llm_judge_normalized",
+  "baseline_configs": [
+    "/home/romulo/Documentos/MAI-DAI-USP/embedding_models_eval/configs/llm_judge_normalized/tournament_description_feasible_baseline_2500.yaml",
+    "/home/romulo/Documentos/MAI-DAI-USP/embedding_models_eval/configs/llm_judge_normalized/tournament_description_topn_baseline_2500.yaml",
+    "/home/romulo/Documentos/MAI-DAI-USP/embedding_models_eval/configs/llm_judge_normalized/with_anchor_no_desc_feasible_baseline_2500.yaml",
+    "/home/romulo/Documentos/MAI-DAI-USP/embedding_models_eval/configs/llm_judge_normalized/with_anchor_no_desc_topn_baseline_2500.yaml",
+    "/home/romulo/Documentos/MAI-DAI-USP/embedding_models_eval/configs/llm_judge_normalized/with_anchor_with_desc_feasible_baseline_2500.yaml",
+    "/home/romulo/Documentos/MAI-DAI-USP/embedding_models_eval/configs/llm_judge_normalized/with_anchor_with_desc_topn_baseline_2500.yaml",
+    "/home/romulo/Documentos/MAI-DAI-USP/embedding_models_eval/configs/llm_judge_normalized/no_anchor_no_desc_feasible_baseline_2500.yaml",
+    "/home/romulo/Documentos/MAI-DAI-USP/embedding_models_eval/configs/llm_judge_normalized/no_anchor_no_desc_topn_baseline_2500.yaml",
+    "/home/romulo/Documentos/MAI-DAI-USP/embedding_models_eval/configs/llm_judge_normalized/no_anchor_with_desc_feasible_baseline_2500.yaml",
+    "/home/romulo/Documentos/MAI-DAI-USP/embedding_models_eval/configs/llm_judge_normalized/no_anchor_with_desc_topn_baseline_2500.yaml"
+  ]
+}
