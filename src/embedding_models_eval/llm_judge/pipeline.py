@@ -284,7 +284,7 @@ def run_pipeline(
             f"primary_protocol: {PRIMARY_PROTOCOL}",
             "",
             "Regenerate:",
-            "  python scripts/run_llm_judge_normalized_eval.py --project-root .",
+            "  python code/run_llm_judge_normalized_eval.py --project-root .",
             "",
         ]
     )

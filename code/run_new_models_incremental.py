@@ -4,9 +4,9 @@ placing results into the SAME directory structure used by the existing 8 models.
 Then reconsolidate all 10 models.
 
 Usage:
-    python scripts/run_new_models_incremental.py
-    python scripts/run_new_models_incremental.py --dry-run
-    python scripts/run_new_models_incremental.py --models qwen3-embedding-8b
+    python code/run_new_models_incremental.py
+    python code/run_new_models_incremental.py --dry-run
+    python code/run_new_models_incremental.py --models qwen3-embedding-8b
 """
 
 from __future__ import annotations
